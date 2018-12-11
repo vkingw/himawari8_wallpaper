@@ -2,7 +2,7 @@
 
 himawari8 wallpaper for macOS, support the macOS external screen. default every 10 minutes get new wallpaper.
 
-##Install
+## Install
 
 
 Warning: requires :zap: **magick** :zap:
@@ -23,7 +23,7 @@ chmod u+x ./install.sh
 ./install.sh
 ```
 
-##Uninstall
+## Uninstall
 
 download uninstall.sh
 
@@ -33,7 +33,7 @@ chmod u+x ./uninstall.sh
 ./uninstall.sh
 ```
 
-##Info 
+## Info 
 
 default get wallpaper every 10m, if you want change，please uninstall then edit install.sh line 32，unit is seconds.
 

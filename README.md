@@ -18,7 +18,7 @@ If you have [homebrew](http://brew.sh/) installed, you can use that to quickly i
 ```
 brew install imagemagick
 brew install graphicsmagick
-npm install --global himawari-bg-mac-mac
+npm install --global himawari-bg-mac
 
 chmod u+x ./install.sh
 

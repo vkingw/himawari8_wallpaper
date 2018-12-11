@@ -2,6 +2,8 @@
 
 himawari8 wallpaper for macOS, support the macOS external screen. default every 10 minutes get new wallpaper.
 
+image pixel 11000 X 11000 😁
+
 ## Install
 
 

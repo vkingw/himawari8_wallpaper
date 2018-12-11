@@ -44,7 +44,7 @@ echo "" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "APP_DIR=${HOME}/.himawari8_wallpaper" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "minutes=\$(date +%M)" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
-echo "tmp=\`expr \${minutes} / 10\`" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
+echo "tmp=\`expr \${minutes} % 10\`" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "name=\`expr \${minutes} - \${tmp}\`" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "himawari-bg-mac -z 5 -s all -o \"${APP_DIR}/\${name}.jpg\"" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 

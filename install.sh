@@ -29,7 +29,7 @@ echo "  </array>" >> ${PLIST_FILE}
 echo "  <key>RunAtLoad</key>" >> ${PLIST_FILE}
 echo "  <true/>" >> ${PLIST_FILE}
 echo "  <key>StartInterval</key>" >> ${PLIST_FILE}
-echo "  <integer>600</integer>" >> ${PLIST_FILE}
+echo "  <integer>1800</integer>" >> ${PLIST_FILE}
 echo "  <key>StandardOutPath</key>" >> ${PLIST_FILE}
 echo "  <string>${APP_DIR}/out.log</string>" >> ${PLIST_FILE}
 echo "  <key>StandardErrorPath</key>" >> ${PLIST_FILE}
@@ -47,6 +47,7 @@ echo "minutes=\$(date +%M)" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "tmp=\`expr \${minutes} % 10\`" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "name=\`expr \${minutes} - \${tmp}\`" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 echo "himawari-bg-mac -z 5 -s all -o \"${APP_DIR}/\${name}.jpg\"" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
+echo "echo \"\`date\` --- himawari-bg-mac run success.\"" >> "${APP_DIR}/${PROGRAM_FILE_NAME}"
 
 chmod u+x "${APP_DIR}/${PROGRAM_FILE_NAME}"
 launchctl load ${PLIST_FILE}
